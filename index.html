@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=width-device, initialscale=1.0">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+   <nav id="navbar">
+     <header>CSS Documentation</header> 
+	  <ul>
+         <li><a class="nav-link" href="#introduction">Introduction</a></li>
+	     <li><a class="nav-link" href="#What-you-should-already-know">What you should already know</a></li>
+	     <li><a class="nav-link" href="#python2-python3">Python2 VS Python3</</a></li>
+	     <li><a class="nav-link" href="#hello-world">Hello World</li>
+	     <li><a class="nav-link" href="#variable-declaration">Variables Declarationa</li>
+	     <li><a class="nav-link" href="#data-types">Data Types</a></li>
+	   </ul>
+</nav>
+<main id="main-doc">
+	 <section class="main-section" id="introduction">  
+	      <header>Introduction</header>
+		  <article>
+		      <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+			  <p>Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.</p>
+          </article>
+	 </section>
+	 <section class="main-section" id="What-you-should-already-know"> 
+            <header>What you should already know</header>
+            <article>
+		        <ol>
+			        <li>Learn the difference between front-end and back-end</li>
+				    <li>Understand what you can do with Python</li>
+				    <li>Install Python (on your PC or Mac)</li>
+				    <li>Python 2 vs. Python 3 — Know the difference</li>
+				    <li>Understand what jobs hire Python developers</li>
+				    <li>You can be a Python developer without knowing “everything” about Python</li>
+			   </ol>
+          </article>		
+     </section>
+	 <section class="main-section" id="python2-python3">  
+	        <header>Python2 VS Python3</header>
+			<article>
+			    <h3>Python2?</h3>
+				<p>Python 2 made code development process easier than earlier versions. It implemented technical details of Python Enhancement Proposal (PEP). Python 2.7 (last version in 2.x ) is no longer under development and in 2020 will be discontinued.</p>
+				<h3>Python3?</h3>
+				<p>On December 2008, Python released version 3.0. This version was mainly released to fix problems which exist in Python 2. The nature of these change is such that Python 3 was incompatible with Python 2. It is backward incompatible Some features of Python 3 have been backported to Python 2.x versions to make the migration process easy in Python 3.</p>
+				<h3>KEY DIFFERENCE:</h3>
+				<ul>
+				    <li>Python 3 syntax is simpler and easily understandable whereas Python 2 syntax is comparatively difficult to understand.</li>
+					<li>Python 3 default storing of strings is Unicode whereas Python 2 stores need to define Unicode string value with "u."</li>
+					<li>Python 3 value of variables never changes whereas in Python 2 value of the global variable will be changed while using it inside for-loop.</li>
+					<li>Python 3 exceptions should be enclosed in parenthesis while Python 2 exceptions should be enclosed in notations.</li>
+					<li>Python 3 rules of ordering comparisons are simplified whereas Python 2 rules of ordering comparison are complex.</li>
+					<li>Python 3 offers Range() function to perform iterations whereas, In Python 2, the xrange() is used for iterations.</li>
+				</ul>
+			</article>
+     </section>
+	 <section class="main-section" id="hello-world">  
+	        <header>Hello World</header>
+			<article>
+			    <p> To get started with writing Python, open the Scratchpad and write your
+                 first "Hello world" Python code:</p>
+				<code>print('Hello, world!')</code>
+				<p> Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+			</article>
+     </section>
+	 <section class="main-section" id="variable-declaration">
+	        <header>Variables Declaration</header>
+			<article>
+ 				 <p>There is no variable declaration in Python! You just assign a value to a variable and it comes into existence. But never use a variable name without having assigned a value beforehand.</p>
+			     <code>>>>i=42
+				      >>> i = i + 1
+                      >>> print i
+					  >>>
+                        43
+				 </code><br><br>
+				 <code>>>> s = "A string consists of characters"
+                       >>> s[0]
+                        'A'
+                      >>> s[3]
+                     't'
+					</code><br><br>
+				 <code>
+				     >>> a = "Linux"
+                     >>> b = "Linux"
+                     >>> a is b
+                      True
+				 </code><br><br>
+				 <code>
+				     >>> hex_number = 0xA0F
+
+                     >>> print hex_number
+
+                      2575
+				 </code><br><br>
+			</article>
+	 </section>
+	 <section class="main-section" id="data-types">
+	        <header>Data Types</header>
+			<article>
+			     <h3>Integer</h3>
+				 <p>In Python 3, there is effectively no limit to how long an integer value can be. Of course, it is constrained by the amount of memory your system has, as are all things, but beyond that an integer can be as long as you need it to be:</p>
+				 <code>
+				     >>> print(123)
+				     123
+				 </code>
+				 <h3>Floating-Point Numbers</h3>
+				 <p>The float type in Python designates a floating-point number. float values are specified with a decimal point. Optionally, the character e or E followed by a positive or negative integer may be appended to specify scientific notation:</p>
+				 <code>
+				     >>> 4.2
+                       4.2
+                     >>> type(4.2)
+                     class 'float'
+				 </code>
+				 <h3>Deep Dive: Floating-Point Representation</h3>
+				 <p>The following is a bit more in-depth information on how Python represents floating-point numbers internally. You can readily use floating-point numbers in Python without understanding them to this level, so don’t worry if this seems overly complicated. The information is presented here in case you are curious.
+
+                  Almost all platforms represent Python float values as 64-bit “double-precision” values, according to the IEEE 754 standard. In that case, the maximum value a floating-point number can have is approximately 1.8 ⨉ 10308. Python will indicate a number greater than that by the string inf:</p>
+                 <code>
+				       >>> 1.79e308
+                       1.79e+308
+                       >>> 1.8e308
+                       inf
+				 </code>
+			</article>
+	  </section>
+</main>
+</body>
+</html>
